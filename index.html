@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pippalla Saikiran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="profile-header">
+    <div class="profile-photo">
+      <img src="sk.jpg" alt="Pippalla Saikiran" />
+    </div>
+    <div class="profile-info">
+      <h1>Pippalla Saikiran</h1>
+      <p>B.Tech (AI & ML) Student &nbsp;|&nbsp; Full Stack Developer</p>
+      <div class="profile-social">
+        <a href="mailto:pippallasaikiran@gmail.com" title="Email"><span>📧</span></a>
+        <a href="https://www.linkedin.com/in/pippalla-saikiran-4238a02a7" target="_blank" title="LinkedIn"><span>🔗</span></a>
+        <a href="tel:+918498927178" title="Phone"><span>📱</span></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Motivated and detail-oriented 3rd-year B.Tech student specializing in Artificial Intelligence and Machine Learning. 
+        Passionate about building scalable web applications and smart AI solutions. 
+        Seeking challenging internships in software development or AI/ML domains.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in CSE (AI & ML)</strong>, CMR Engineering College, Hyderabad – CGPA: 8.1 (Expected 2026)</li>
+        <li><strong>Diploma in Automobile Engineering</strong>, Govt Polytechnic, Hyderabad – CGPA: 7.5</li>
+        <li><strong>SSC</strong>, Krishnaveni Talent School – CGPA: 10.0</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <span>Python</span>
+          <div class="skill-bar"><div class="skill-level" data-level="92%"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript (ES6+)</span>
+          <div class="skill-bar"><div class="skill-level" data-level="88%"></div></div>
+        </div>
+        <div class="skill">
+          <span>React & Node.js</span>
+          <div class="skill-bar"><div class="skill-level" data-level="85%"></div></div>
+        </div>
+        <div class="skill">
+          <span>MongoDB / MySQL</span>
+          <div class="skill-bar"><div class="skill-level" data-level="80%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Machine Learning</span>
+          <div class="skill-bar"><div class="skill-level" data-level="75%"></div></div>
+        </div>
+      </div>
+      <ul class="skills-list">
+        <li>Frameworks: MERN Stack, Bootstrap, Tkinter</li>
+        <li>Libraries: NumPy, Pandas, OpenCV</li>
+        <li>Tools: Git, REST APIs, Linux, SDLC</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" onmouseenter="highlightCard(this)" onmouseleave="unhighlightCard(this)">
+          <img src="ecommerce.jpeg" alt="E-Commerce Website" class="project-img"/>
+          <h3>E-Commerce Website</h3>
+          <p>
+            <strong>Stack:</strong> MERN, Razorpay, Firebase<br>
+            <strong>Features:</strong> User authentication, product management, secure payments, responsive UI.
+          </p>
+          <a href="https://github.com/yourusername/ecommerce" target="_blank">View Code</a>
+        </div>
+        <div class="project-card" onmouseenter="highlightCard(this)" onmouseleave="unhighlightCard(this)">
+          <img src="helmet.jpg" alt="Helmet Detection" class="project-img"/>
+          <h3>Helmet & Number Plate Detection</h3>
+          <p>
+            <strong>Stack:</strong> Python, OpenCV, YOLOv5<br>
+            <strong>Features:</strong> Real-time detection, alert system, high accuracy.
+          </p>
+          <a href="https://github.com/yourusername/helmet-detection" target="_blank">View Code</a>
+        </div>
+        <div class="project-card" onmouseenter="highlightCard(this)" onmouseleave="unhighlightCard(this)">
+          <img src="airquality.jpg" alt="Air Quality Monitoring" class="project-img"/>
+          <h3>Air Quality Monitoring</h3>
+          <p>
+            <strong>Stack:</strong> Arduino, MQ135, IoT<br>
+            <strong>Features:</strong> Real-time monitoring, audible alerts, LCD display.
+          </p>
+          <a href="https://github.com/yourusername/air-quality" target="_blank">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Generative AI – LinkedIn Learning</li>
+        <li>Java Programming – HackerRank</li>
+        <li>MySQL for Data Management – IBM SkillsBuild</li>
+        <li>MongoDB Basics – MongoDB University</li>
+        <li>CPP, PHP, JS, MySQL, CSS – IIT Bombay Spoken Tutorial</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:pippallasaikiran@gmail.com">pippallasaikiran@gmail.com</a></p>
+        <p>Phone: +91 8498927178</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pippalla-saikiran-4238a02a7" target="_blank">View Profile</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Pippalla Saikiran. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
